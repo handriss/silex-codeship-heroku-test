@@ -1,0 +1,7 @@
+
+RewriteEngine on
+
+# redirect requests to Controller
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_FILENAME} !-f
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_FILENAME} !-d
+FallbackResource /index.php
